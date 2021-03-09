@@ -5,7 +5,13 @@ require "format".setup {
     javascript = {
         {cmd = {"npx prettier -w", "./node_modules/.bin/eslint --fix"}}
     },
+    javascriptreact = {
+        {cmd = {"npx prettier -w", "./node_modules/.bin/eslint --fix"}}
+    },
     typescript = {
+        {cmd = {"npx prettier -w", "./node_modules/.bin/eslint --fix"}}
+    },
+    typescriptreact = {
         {cmd = {"npx prettier -w", "./node_modules/.bin/eslint --fix"}}
     },
     html = {
@@ -19,7 +25,10 @@ require "format".setup {
             end_pattern = "^```$",
             target = "current"
         }
-    }
+    },
+    python = {
+        {cmd = {"black"}}
+    },
 }
 
 -- TODO

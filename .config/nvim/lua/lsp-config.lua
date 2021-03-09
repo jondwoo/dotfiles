@@ -45,6 +45,7 @@ local on_attach = function(client, bufnr)
                    opts)
 
     buf_set_keymap('n', '<space>i', '<cmd>lua vim.lsp.buf.code_action()<CR>',
+
                    opts)
     buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>',
                    opts)
