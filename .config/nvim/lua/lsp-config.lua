@@ -75,35 +75,9 @@ lspconfig.tsserver.setup {
 
 local util = require 'lspconfig/util'
 
--- JSON lsp
+-- JSON setup
 lspconfig.jsonls.setup {on_attach = on_attach}
 
--- Formatting via efm
---local prettier = require "efm/prettier"
---local eslint = require "efm/eslint"
---local black = require "efm/black"
---local flake8 = require "efm/flake8"
---local mypy = require "efm/mypy"
---
---local languages = {
---    typescript = {prettier, eslint},
---    javascript = {prettier, eslint},
---    typescriptreact = {prettier, eslint},
---    javascriptreact = {prettier, eslint},
---    yaml = {prettier},
---    json = {prettier},
---    html = {prettier},
---    scss = {prettier},
---    css = {prettier},
---    markdown = {prettier},
---    python = {black, isort, flake8, mypy}
---}
---
---lspconfig.efm.setup {
---    root_dir = lspconfig.util.root_pattern("yarn.lock", "lerna.json", ".git"),
---    filetypes = vim.tbl_keys(languages),
---    init_options = {documentFormatting = true, codeAction = true},
---    settings = {languages = languages, log_level = 1, log_file = '~/efm.log'},
---    on_attach = on_attach
---}
- 
+-- Python setup
+lspconfig.pyright.setup{on_attach = on_attach}
+
