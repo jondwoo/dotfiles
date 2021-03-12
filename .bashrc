@@ -95,7 +95,14 @@ alias vim='nvim'
 alias initvim='nvim ~/.config/nvim/init.vim'
 alias l="ls -la"       # List in long format, include dotfiles
 alias ..="cd .."
+alias uu='sudo apt update && sudo apt upgrade -y'
+
+# git
 alias dot='/usr/bin/git --git-dir=/home/jondwoo/.cfg/ --work-tree=/home/jondwoo'
+alias ga='git add'
+alias gp='git push origin'
+alias gc='git commit -m'
+alias gs='git status'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

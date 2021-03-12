@@ -44,7 +44,8 @@ let g:closetag_filetypes = 'html,xhtml,jsx,javascript,javascriptreact,typescript
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.ts,*.tsx'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_shortcut = '>'
-let g:closetag_close_shortcut = '<leader>>'
+"TODO
+let g:closetag_close_shortcut = '<C->>'
 let g:closetag_regions = {
     \ 'typescript.tsx': 'jsxRegion,tsxRegion',
     \ 'javascript.jsx': 'jsxRegion',
