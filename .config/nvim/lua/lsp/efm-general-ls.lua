@@ -18,7 +18,7 @@ local prettier = {formatCommand = "./node_modules/.bin/prettier --stdin-filepath
 local prettier_yaml = {formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true}
 
 local eslint = {
-    lintCommand = "./node_modules/.bin/eslint -f unix --stdin --stdin-filename ${INPUT}",
+    -- lintCommand = "./node_modules/.bin/eslint -f unix --stdin --stdin-filename ${INPUT}",
     lintIgnoreExitCode = true,
     lintStdin = true,
     lintFormats = {"%f:%l:%c: %m"},

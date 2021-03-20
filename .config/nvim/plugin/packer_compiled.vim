@@ -44,6 +44,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/codi.vim"
   },
+  ["efm-langserver"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/efm-langserver"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/emmet-vim"
@@ -143,6 +147,10 @@ _G.packer_plugins = {
   ["nvim-miniyank"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/nvim-miniyank"
+  },
+  ["nvim-peekup"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/nvim-peekup"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
