@@ -44,10 +44,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/codi.vim"
   },
-  ["efm-langserver"] = {
-    loaded = true,
-    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/efm-langserver"
-  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/emmet-vim"
@@ -67,6 +63,10 @@ _G.packer_plugins = {
   ["goyo.vim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/goyo.vim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/gruvbox"
   },
   ["hop.nvim"] = {
     loaded = true,

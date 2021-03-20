@@ -66,7 +66,8 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
 
     -- Color
-    use 'christianchiarulli/nvcode-color-schemes.vim'
+    -- use 'christianchiarulli/nvcode-color-schemes.vim'
+    use 'gruvbox-community/gruvbox'
     use 'norcalli/nvim-colorizer.lua'
 
     -- Git
