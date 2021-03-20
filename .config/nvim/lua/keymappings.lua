@@ -36,6 +36,16 @@ vim.cmd([[
   nnoremap <silent> <C-Right> :vertical resize +2<CR>
 ]])
 
+-- better exits
+vim.cmd([[
+  cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+  cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q'))
+]])
+vim.api.nvim_set_keymap('n', '<Leader>w', ':w<CR>', {silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', {silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>x', ':x<CR>', {silent = true})
+
+
 -- better indenting
 vim.api.nvim_set_keymap('v', '<', '<gv', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('v', '>', '>gv', {noremap = true, silent = true})

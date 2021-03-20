@@ -14,12 +14,12 @@ local luaFormat = {
 }
 -- JavaScript/React/TypeScript
 -- local prettier = {formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT}", formatStdin = true}
-local prettier = {formatCommand = "npx prettier -w --stdin-filepath ${INPUT}", formatStdin = true}
+local prettier = {formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT}", formatStdin = true}
 
-local prettier_yaml = {formatCommand = "npx prettier --stdin-filepath ${INPUT}", formatStdin = true}
+local prettier_yaml = {formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT}", formatStdin = true}
 
 local eslint = {
-    -- lintCommand = "./node_modules/.bin/eslint -f unix --stdin --stdin-filename ${INPUT}",
+    lintCommand = "./node_modules/.bin/eslint -f unix --stdin --stdin-filename ${INPUT}",
     lintIgnoreExitCode = true,
     lintStdin = true,
     lintFormats = {"%f:%l:%c: %m"},

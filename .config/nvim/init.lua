@@ -10,7 +10,7 @@ else
   require('colorscheme')
   require('nv-utils')
 
---  -- Plugins
+  -- Plugins
   require('nv-compe')
   require('nv-colorizer')
   require('nv-nvimtree')

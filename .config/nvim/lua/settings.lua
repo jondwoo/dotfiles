@@ -27,3 +27,8 @@ vim.o.updatetime=300                      --Faster completion
 vim.o.timeoutlen=100                      --By default timeoutlen is 1000 ms
 vim.o.scrolloff=8
 vim.o.clipboard="unnamedplus"               --Copy paste between vim and everything else
+-- vim.cmd('autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync(nil, 1000)')
+-- vim.cmd('autocmd BufWritePre *.js lua vim.lsp.buf.formatting_sync(nil, 1000)')
+-- vim.cmd('autocmd BufWritePre *.jsx lua vim.lsp.buf.formatting_sync(nil, 1000)')
+-- vim.cmd('autocmd BufWritePre *.tsx lua vim.lsp.buf.formatting_sync(nil, 1000)')
+-- vim.cmd('autocmd BufWritePre *.ts lua vim.lsp.buf.formatting_sync(nil, 1000)')
