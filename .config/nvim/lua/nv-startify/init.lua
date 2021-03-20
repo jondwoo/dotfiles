@@ -19,7 +19,7 @@ vim.g.startify_session_dir = '~/.config/nvim/session'
 
 vim.api.nvim_exec('let startify_lists = [ { \'type\': \'files\',     \'header\': [\'   Files\'] }, { \'type\': \'sessions\',  \'header\': [\'   Sessions\'] },    { \'type\': \'bookmarks\', \'header\': [\'   Bookmarks\'] },                                                                   ]',true)
 
-vim.api.nvim_exec('let startify_bookmarks = [ { \'i\': \'~/.config/nvim/init.lua\' }, { \'b\': \'~/.bashrc\' }]', true)
+vim.api.nvim_exec('let startify_bookmarks = [ { \'i\': \'~/.config/nvim/init.lua\' }, { \'p\': \'~/.config/nvim/lua/plugins.lua\' }, { \'s\': \'~/.config/nvim/lua/settings.lua\' }, { \'m\': \'~/.config/nvim/lua/keymappings.lua\' },  { \'b\': \'~/.bashrc\' }]', true)
 
 vim.cmd([[
 function! StartifyEntryFormat()

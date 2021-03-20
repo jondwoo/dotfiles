@@ -25,6 +25,5 @@ vim.o.writebackup=false                       --This is recommended by coc
 vim.wo.signcolumn="yes"                      --Always show the signcolumn, otherwise it would shift the text each time
 vim.o.updatetime=300                      --Faster completion
 vim.o.timeoutlen=100                      --By default timeoutlen is 1000 ms
+vim.o.scrolloff=8
 vim.o.clipboard="unnamedplus"               --Copy paste between vim and everything else
-vim.o.encoding='utf8'
-vim.o.guifont="Fira\\ Code\\ Nerd\\ Font\\ 14"

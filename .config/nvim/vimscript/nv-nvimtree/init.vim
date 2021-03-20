@@ -1,9 +1,8 @@
-" TODO this really should be in the lua section
 let g:nvim_tree_icons = {
-    \ 'default': '',
-    \ 'symlink': '',
+    \ 'default': '',
+    \ 'symlink': '',
     \ 'git': {
-    \   'unstaged': "",
+    \   'unstaged': "",
     \   'staged': "✓",
     \   'unmerged': "",
     \   'renamed': "➜",
@@ -11,10 +10,9 @@ let g:nvim_tree_icons = {
     \   },
     \ 'folder': {
     \   'default': "",
-    \   'open': "",
+    \   'open': "",
     \   'empty': "",
     \   'empty_open': "",
     \   'symlink': "",
     \   }
     \ }
-

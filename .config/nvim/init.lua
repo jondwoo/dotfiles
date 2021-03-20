@@ -16,6 +16,7 @@ else
   require('nv-nvimtree')
   require('nv-treesitter')
   require('nv-barbar')
+  require('nv-emmet')
   require('nv-quickscope')
   require('nv-gitsigns')
   require('nv-nvim-autopairs')
@@ -33,6 +34,7 @@ else
   require('nv-hop')
   require('nv-gitblame')
   require('nv-galaxyline')
+  require('nv-nvim-peekup')
 
   -- Which Key (Hope to replace with Lua plugin someday)
   vim.cmd('source ~/.config/nvim/vimscript/nv-whichkey/init.vim')

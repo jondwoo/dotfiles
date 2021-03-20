@@ -25,13 +25,14 @@ nv_utils.define_augroups({
     _general_settings = {
         {
             'TextYankPost', '*',
-            'lua require(\'vim.highlight\').on_yank({higroup = \'QuickScopePrimary\', timeout = 200})'
+            'lua require(\'vim.highlight\').on_yank({higroup = \'Search\', timeout = 200})'
         }, {'BufWinEnter', '*', 'setlocal formatoptions-=c formatoptions-=r formatoptions-=o'},
         {'BufRead', '*', 'setlocal formatoptions-=c formatoptions-=r formatoptions-=o'},
         {'BufNewFile', '*', 'setlocal formatoptions-=c formatoptions-=r formatoptions-=o'},
         {'FileType', 'java', 'luafile ~/.config/nvim/lua/lsp/java-ls.lua'},
         {'FileType', 'java', 'nnoremap ca <Cmd>lua require(\'jdtls\').code_action()<CR>'},
-        {'FileType', 'java', 'nnoremap ca <Cmd>lua require(\'jdtls\').code_action()<CR>'}
+        {'FileType', 'java', 'nnoremap ca <Cmd>lua require(\'jdtls\').code_action()<CR>'},
+        {'FileType', 'markdown', 'set wrap'}
         -- {'User', 'GoyoLeave', 'lua require(\'galaxyline\').disable_galaxyline()'},
         -- {'User', 'GoyoEnter', 'lua require(\'galaxyline\').galaxyline_augroup()'},
     }
@@ -166,7 +167,7 @@ function nv_utils.next_hunk()
     require('gitsigns').next_hunk()
 end
 
-function nv_utils.prev_hunk()
+function nv_utils.rev_hunk()
     require('gitsigns').prev_hunk()
 end
 
