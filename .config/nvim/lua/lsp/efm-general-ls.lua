@@ -13,7 +13,6 @@ local luaFormat = {
     formatStdin = true
 }
 -- JavaScript/React/TypeScript
--- local prettier = {formatCommand = "./node_modules/.bin/prettier --stdin-filepath ${INPUT}", formatStdin = true}
 local prettier = {formatCommand = "npx prettier --stdin-filepath ${INPUT}", formatStdin = true}
 
 local prettier_yaml = {formatCommand = "npx prettier --stdin-filepath ${INPUT}", formatStdin = true}
@@ -23,7 +22,7 @@ local eslint = {
     lintIgnoreExitCode = true,
     lintStdin = true,
     lintFormats = {"%f:%l:%c: %m"},
-    -- formatCommand = "npx eslint --fix-to-stdout --stdin --stdin-filename=${INPUT}",
+    formatCommand = "npx eslint --fix-to-stdout --stdin --stdin-filename=${INPUT}",
     formatStdin = true
 }
 
@@ -37,12 +36,25 @@ local shfmt = {
   formatStdin = true
 }
 
+local markdownlint = {
+    -- TODO default to global lintrc
+    -- lintcommand = 'markdownlint -s -c ./markdownlintrc',
+    lintCommand = 'markdownlint -s',
+    lintStdin = true,
+    lintFormats = { '%f:%l %m', '%f:%l:%c %m', '%f: %l: %m' }
+}
+
+local markdownPandocFormat = {
+  formatCommand = 'pandoc -f markdown -t gfm -sp --tab-stop=2',
+  formatStdin = true
+}
+
 
 
 require"lspconfig".efm.setup {
     -- init_options = {initializationOptions},
     init_options = {documentFormatting = true, codeAction = false},
-    filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml"},
+    filetypes = {"lua", "python", "javascriptreact", "javascript", "sh", "html", "css", "json", "yaml", "markdown"},
     settings = {
         rootMarkers = {".git/"},
         languages = {
@@ -55,11 +67,11 @@ require"lspconfig".efm.setup {
             css = {prettier},
             json = {prettier},
             yaml = {prettier_yaml},
+            -- markdown = {markdownPandocFormat, markdownlint},
+            markdown = {markdownPandocFormat},
         }
     }
 }
 
--- TODO turn these eslint and prettier examples into something good
--- TODO also shellcheck and shell formatting
 -- Also find way to toggle format on save
 -- maybe this will help: https://superuser.com/questions/439078/how-to-disable-autocmd-or-augroup-in-vim

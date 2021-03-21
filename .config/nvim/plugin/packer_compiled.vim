@@ -64,10 +64,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/goyo.vim"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/gruvbox"
-  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/hop.nvim"
@@ -160,6 +156,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
+  ["nvim-treesitter-refactor"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/nvim-treesitter-refactor"
+  },
   ["nvim-ts-autotag"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
@@ -179,6 +179,10 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -200,10 +204,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/rnvimr"
   },
-  ["tagalong.vim"] = {
-    loaded = true,
-    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/tagalong.vim"
-  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
@@ -215,10 +215,6 @@ _G.packer_plugins = {
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vim-bbye"
-  },
-  ["vim-closetag"] = {
-    loaded = true,
-    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vim-closetag"
   },
   ["vim-devicons"] = {
     loaded = true,
@@ -239,6 +235,10 @@ _G.packer_plugins = {
   ["vim-matchup"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vim-matchup"
+  },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vim-polyglot"
   },
   ["vim-rhubarb"] = {
     loaded = true,
@@ -276,9 +276,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vscode-es7-javascript-react-snippets"
   },
+  ["vscode-go"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vscode-go"
+  },
   ["vscode-javascript"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vscode-javascript"
+  },
+  ["vscode-rust"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vscode-rust"
   },
   ["webapi-vim"] = {
     loaded = true,

@@ -32,7 +32,11 @@ nv_utils.define_augroups({
         {'FileType', 'java', 'luafile ~/.config/nvim/lua/lsp/java-ls.lua'},
         {'FileType', 'java', 'nnoremap ca <Cmd>lua require(\'jdtls\').code_action()<CR>'},
         {'FileType', 'java', 'nnoremap ca <Cmd>lua require(\'jdtls\').code_action()<CR>'},
-        {'FileType', 'markdown', 'set wrap'}
+        {'FileType', 'markdown', 'setlocal wrap'},
+        -- {'BufWinEnter', '.sol', 'setlocal filetype=solidity'},
+        {'BufRead', '*.sol', 'setlocal filetype=solidity'},
+        {'BufNewFile', '*.sol', 'setlocal filetype=solidity'}
+        -- autocmd! BufRead,BufNewFile *.{jsx,jx,js} setlocal filetype=javascript.jsx
         -- {'User', 'GoyoLeave', 'lua require(\'galaxyline\').disable_galaxyline()'},
         -- {'User', 'GoyoEnter', 'lua require(\'galaxyline\').galaxyline_augroup()'},
     }
@@ -167,7 +171,7 @@ function nv_utils.next_hunk()
     require('gitsigns').next_hunk()
 end
 
-function nv_utils.rev_hunk()
+function nv_utils.prev_hunk()
     require('gitsigns').prev_hunk()
 end
 
@@ -205,4 +209,3 @@ end
 -- autocmd BufWritePre *.rs lua vim.lsp.buf.formatting_sync(nil, 1000)
 
 return nv_utils
-

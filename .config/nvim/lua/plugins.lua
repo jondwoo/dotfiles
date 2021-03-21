@@ -38,18 +38,25 @@ return require('packer').startup(function(use)
     use 'hrsh7th/vim-vsnip'
     use 'xabikos/vscode-javascript'
     use 'dsznajder/vscode-es7-javascript-react-snippets'
+    use 'golang/vscode-go'
+    use 'rust-lang/vscode-rust'
     use 'ChristianChiarulli/html-snippets'
     use 'ChristianChiarulli/java-snippets'
     use 'ChristianChiarulli/python-snippets'
+    -- use 'cstrap/python-snippets'
+    -- use 'ylcnfrht/vscode-python-snippet-pack'
+    -- use 'SirVer/ultisnips'
+    -- use 'norcalli/snippets.nvim'
 
     -- Treesitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    -- use 'nvim-treesitter/nvim-treesitter-refactor'
+    use 'nvim-treesitter/nvim-treesitter-refactor'
+    use 'nvim-treesitter/playground'
     use 'p00f/nvim-ts-rainbow'
 
     -- Icons
-    use 'ryanoasis/vim-devicons'
     use 'kyazdani42/nvim-web-devicons'
+    use 'ryanoasis/vim-devicons'
 
     -- Status Line and Bufferline
     use 'glepnir/galaxyline.nvim'
@@ -98,10 +105,8 @@ return require('packer').startup(function(use)
     use 'mhinz/vim-startify'
     use 'metakirby5/codi.vim'
     use 'psliwka/vim-smoothie'
-    use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
     use 'moll/vim-bbye'
-    use 'AndrewRadev/tagalong.vim'
-    use 'alvan/vim-closetag'
+    use {'iamcco/markdown-preview.nvim', run = 'cd app && npm install'}
     use 'liuchengxu/vim-which-key'
     use 'voldikss/vim-floaterm'
     use 'liuchengxu/vista.vim'
@@ -111,4 +116,23 @@ return require('packer').startup(function(use)
     use 'andymass/vim-matchup'
     use 'phaazon/hop.nvim'
     use 'tpope/vim-sleuth'
+    use 'sheerun/vim-polyglot'
+
+	-- TODO put this back when stable for indent lines
+-- 	use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+-- 	vim.g.indent_blankline_space_char = ' '
+-- 	vim.g.indent_blankline_buftype_exclude = {'terminal'}
+-- 	vim.g.indent_blankline_filetype_exclude = {'help', 'startify'}
+-- 	vim.g.indent_blankline_char = '▏'
+-- 	vim.g.indent_blankline_use_treesitter=true
+    -- use 'AndrewRadev/tagalong.vim'
+    -- use 'alvan/vim-closetag'
+    -- use 'RRethy/vim-illuminate'
+    -- use 'b3nj5m1n/kommentary'
+    -- use {
+    --     'glacambre/firenvim',
+    --     run = function()
+    --         vim.fn['firenvim#install'](1)
+    --     end
+    -- }
 end)
