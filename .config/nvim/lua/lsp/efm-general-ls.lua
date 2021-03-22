@@ -62,6 +62,8 @@ require"lspconfig".efm.setup {
             python = {isort, yapf},
             javascriptreact = {prettier, eslint},
             javascript = {prettier, eslint},
+            -- javascriptreact = {prettier},
+            -- javascript = {prettier},
             sh = {shellcheck, shfmt},
             html = {prettier},
             css = {prettier},

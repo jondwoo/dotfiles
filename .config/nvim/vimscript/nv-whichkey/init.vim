@@ -21,7 +21,8 @@ autocmd! FileType which_key
 autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
-let g:which_key_map[','] = [ '<Plug>(emmet-expand-abbr)'                       , 'exapnd tags' ]
+let g:which_key_map[';'] = [ ':Dashboard'                                      , 'home screen' ]
+let g:which_key_map[','] = [ '<Plug>(emmet-expand-abbr)'                       , 'expand tags' ]
 let g:which_key_map['"'] = [ '<Plug>PeekupOpen'                                , 'registers' ]
 let g:which_key_map['?'] = [ ':NvimTreeFindFile'                               , 'find current file' ]
 let g:which_key_map['e'] = [ ':NvimTreeToggle'                                 , 'explorer' ]
@@ -35,6 +36,8 @@ let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 ,
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 " TODO play nice with status line
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
+let g:which_key_map['w'] = [ ':w'                                            , 'save' ]
+let g:which_key_map['x'] = [ ':x'                                            , 'exit' ]
 
 " Group mappings
 
@@ -121,11 +124,8 @@ let g:which_key_map.s = {
 
 let g:which_key_map.S = {
       \ 'name' : '+Session' ,
-      \ 'c' : [':SClose'          , 'Close Session'],
-      \ 'd' : [':SDelete'         , 'Delete Session'],
-      \ 'l' : [':SLoad'           , 'Load Session'],
-      \ 's' : [':Startify'        , 'Start Page'],
-      \ 'S' : [':SSave'           , 'Save Session'],
+      \ 's' : [':SessionSave'           , 'save session'],
+      \ 'l' : [':SessionLoad'           , 'load Session'],
       \ }
 
 " g is for git

@@ -44,6 +44,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/codi.vim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
+  ["dial.nvim"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/dial.nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/emmet-vim"
@@ -63,6 +71,10 @@ _G.packer_plugins = {
   ["goyo.vim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/goyo.vim"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/gruvbox"
   },
   ["hop.nvim"] = {
     loaded = true,
@@ -91,10 +103,6 @@ _G.packer_plugins = {
   neogit = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/neogit"
-  },
-  ["nvcode-color-schemes.vim"] = {
-    loaded = true,
-    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -204,6 +212,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/rnvimr"
   },
+  ["surround.nvim"] = {
+    loaded = true,
+    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/surround.nvim"
+  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim"
@@ -255,10 +267,6 @@ _G.packer_plugins = {
   ["vim-smoothie"] = {
     loaded = true,
     path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vim-smoothie"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/home/jondwoo/.local/share/nvim/site/pack/packer/start/vim-startify"
   },
   ["vim-vsnip"] = {
     loaded = true,

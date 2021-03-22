@@ -34,7 +34,7 @@ return require('packer').startup(function(use)
 
     -- Autocomplete
     use 'hrsh7th/nvim-compe'
-    use 'christianchiarulli/emmet-vim'
+    use 'mattn/emmet-vim'
     use 'hrsh7th/vim-vsnip'
     use 'xabikos/vscode-javascript'
     use 'dsznajder/vscode-es7-javascript-react-snippets'
@@ -73,8 +73,7 @@ return require('packer').startup(function(use)
     use 'kyazdani42/nvim-tree.lua'
 
     -- Color
-    -- use 'christianchiarulli/nvcode-color-schemes.vim'
-    use 'gruvbox-community/gruvbox'
+    use 'christianchiarulli/nvcode-color-schemes.vim'
     use 'norcalli/nvim-colorizer.lua'
 
     -- Git
@@ -102,7 +101,8 @@ return require('packer').startup(function(use)
     use 'unblevable/quick-scope'
     use 'airblade/vim-rooter'
     use 'kevinhwang91/rnvimr'
-    use 'mhinz/vim-startify'
+    -- use 'mhinz/vim-startify'
+    use 'ChristianChiarulli/dashboard-nvim'
     use 'metakirby5/codi.vim'
     use 'psliwka/vim-smoothie'
     use 'moll/vim-bbye'
@@ -117,6 +117,8 @@ return require('packer').startup(function(use)
     use 'phaazon/hop.nvim'
     use 'tpope/vim-sleuth'
     use 'sheerun/vim-polyglot'
+    use 'monaqa/dial.nvim'
+    use 'blackcauldron7/surround.nvim'
 
 	-- TODO put this back when stable for indent lines
 -- 	use { 'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
@@ -131,7 +133,7 @@ return require('packer').startup(function(use)
     -- use 'b3nj5m1n/kommentary'
     -- use {
     --     'glacambre/firenvim',
-    --     run = function()
+    --     run  function()
     --         vim.fn['firenvim#install'](1)
     --     end
     -- }
